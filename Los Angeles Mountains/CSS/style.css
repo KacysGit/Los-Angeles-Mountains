@@ -47,32 +47,46 @@ nav {
   /* The overlay effect - lays on top of the container and over the image */
 .overlay {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    width: 72%; /* x position in container*/
-    height: 500px; /* y position in container */
-    font-size: 138px;
-    line-height: 24px;
+    bottom: calc(5% + 25vw); /* the vw amount adjusts height */
+    right: calc(7% + 29vw); /* Increase to push left */
+    width: calc(60% + 5vw); /* https://stackoverflow.com/questions/42014594/linear-scaling-between-2-font-sizes-using-calc-and-vw */
+    letter-spacing: calc(0.5vw + 1px);
+    font-size: calc(4vw + 75px); 
+    line-height: 1.2;
     color: #4d4d4d;
-    font-family: "novecento-sans-condensed", sans-serif; /* font is supposed to be Novevento sans condensed DemiBold according to illustrator but I am having trouble setting it correctly*/
+    font-family: "novecento-sans-condensed", sans-serif;
     font-weight: 700;
+    text-align: right;
   }
 
 .overlay2 {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-    width: 72%;
-    height: 375px;/* position in container */
-    font-size: 150px;
-    line-height: 24px;
+    bottom: calc(5% + 20vw); /* the vw amount adjusts height */
+    right: calc(7% + 29vw); /* Increase to push left */
+    width: calc(60% + 5vw); 
+    letter-spacing: calc(0.5vw + 1px);
+    font-size: calc(4vw + 90px); 
+    line-height: .5;
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
     font-weight: 700;
+    text-align: right;
+}
+
+/* Navigation Bar */
+.navigation a{
+    float:right;
+    padding-top:35px;
+    padding-left:35px;
+    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: #fefeff;
+    font-family: "Lato";
+    font-weight: 900;
+    font-style: italic;
+}
+.navigation img{
+    float:left;
 }
