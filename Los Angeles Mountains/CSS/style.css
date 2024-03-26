@@ -82,11 +82,40 @@ nav {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 20px;
-    color: #fefeff;
-    font-family: "Lato";
+    color: #101016;
+    font-family: "Arial";
     font-weight: 900;
     font-style: italic;
 }
 .navigation img{
     float:left;
 }
+
+/* Last Section */
+.last-section{
+    position: relative;
+    width: 100%;
+}
+
+.text-block {
+
+    position: absolute;
+    top: 140%;
+    left: 22%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 1vw;
+    max-width: 80%; 
+  }
+  .text-block h4 {
+    color: #414f6b;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: 3vw;
+  }
+
+  #last-section img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+  
