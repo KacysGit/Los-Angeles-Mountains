@@ -143,3 +143,21 @@ nav {
     font-size: 3vw;
   }
   
+  /* Footer */
+  .footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #414f6b;
+  font-family: "novecento-sans-condense", sans-serif;
+  font-style: bold;
+  font-size: 3vw;
+  color: #63769D;
+  text-align: center;
+}
+
+.footer img{
+    opacity: 0.3;
+    float: left;
+}
