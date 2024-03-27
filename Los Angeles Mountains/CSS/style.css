@@ -76,7 +76,7 @@ nav {
 }
 .initialLogo {
     position: absolute;
-    bottom: calc(75% + 3vw); /* the vw amount adjusts height */
+    bottom: calc(80% + 3vw); /* the vw amount adjusts height */
     right: calc(87% + 2vw); /* Increase to push left */
     width: calc(60% + 5vw); 
     font-size: calc(4vw + 1%); 
@@ -84,15 +84,12 @@ nav {
 }
 .overlay3 {
     position: absolute;
-    bottom: calc(75% + 3vw); /* the vw amount adjusts height */
+    bottom: calc(85% + 3vw); /* the vw amount adjusts height */
     right: calc(7% + 2vw); /* Increase to push left */
     width: calc(60% + 5vw); 
     font-size: calc(1vw + 2%); 
     text-align: right;
     color: white;
-}
-.overlay3 img {
-    right: calc(30% _ 2vw);
 }
 .overlay3 a {
     color: white;
