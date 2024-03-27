@@ -178,7 +178,13 @@ nav {
     clear: both;
 }
   
+/* Carousel */
 
+.carousel-inner .item.active img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
   
 /* description section */
 

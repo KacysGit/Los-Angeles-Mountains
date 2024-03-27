@@ -9,10 +9,13 @@
     <link href="CSS/style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/son1zgm.css">
     <title>Los Angeles Mountains</title>
+    <!-- For the Carousal. Following https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <section>
-        <!-- Responsive Carousel -->
         <div class="navigation">
             <img src="img/Logo.png" alt="Los Angeles Mountains Logo">
             <div class="navbarLink">
@@ -52,7 +55,7 @@
         <div class="imageOverlay">
             <div class="row">
                 <div class="column">
-                <img src="img/slide1.png" alt="First Mountain" onclick="gallery(this);">
+                <img src="img/slide4.png" alt="First Mountain" onclick="gallery(this);">
                 </div>
                 <div class="column">
                 <img src="img/slide2.png" alt="Second Mountain" onclick="gallery(this);">
@@ -105,6 +108,41 @@
         <div class="number">
             <h4> 01. </h4>
         </div>
+    </section>
+    <section>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/slide4.png" alt="Mountain">
+              </div>
+          
+              <div class="item">
+                <img src="img/slide2.png" alt="Second Mountain">
+              </div>
+          
+              <div class="item">
+                <img src="img/slide3.png" alt="Man on Mountain">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </section>
     <section >
         <div class="climb">
