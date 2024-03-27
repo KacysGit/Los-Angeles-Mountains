@@ -129,12 +129,22 @@
     <section>
         <!-- Tabs for Mountain 1 and Mountain 2 -->
         <body>
-        <button class="tablink" onclick="openPage('Home', this, 'red')">Mountain 1</button>
-        <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Mountain 2</button>
+        <button class="tablink" onclick="openPage('Home', this, '#B0B4BE', '#414f6b')" id="defaultOpen">Mountain 1</button>
+        <button class="tablink" onclick="openPage('News', this, '#B0B4BE', '#414f6b')" >Mountain 2</button>
         
         <div id="Home" class="tabcontent">
-            <h3>Home</h3>
-            <p>Home is where the heart is..</p>
+            <div class="last-section">
+
+                <img src="img/background3.png" alt="Mountain with birds" style="width:100%";>
+                <div class="content">
+                    <h4>Schedule</h4>
+                    <p> 25 Nov 2016     Vestibulum viverra <br>
+                        28 Nov 2016     Vestibulum viverra <br> <br>
+                        18 Dec 2016     Vestibulum viverra<br><br>
+                        7 Jan 2017      Vestibulum viverra
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div id="News" class="tabcontent">
@@ -142,7 +152,7 @@
             <p>Some news this fine day!</p>
         </div>
         <script>
-            function openPage(pageName, elmnt, color) {
+            function openPage(pageName, elmnt, color, txtcolor) {
                 // Hide all elements with class="tabcontent" by default */
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
@@ -154,6 +164,7 @@
                 tablinks = document.getElementsByClassName("tablink");
                 for (i = 0; i < tablinks.length; i++) {
                   tablinks[i].style.backgroundColor = "";
+                  tablinks[i].style.color = "";
                 }
               
                 // Show the specific tab content
@@ -161,24 +172,14 @@
               
                 // Add the specific color to the button used to open the tab content
                 elmnt.style.backgroundColor = color;
+                elmnt.style.color = txtcolor;
               }
               
               // Get the element with id="defaultOpen" and click on it
               document.getElementById("defaultOpen").click();
         </script>
     </body>
-        <div class="last-section">
-
-            <img src="img/background3.png" alt="Mountain with birds" style="width:100%";>
-            <div class="content">
-                <h4>Schedule</h4>
-                <p> 25 Nov 2016     Vestibulum viverra <br>
-                    28 Nov 2016     Vestibulum viverra <br> <br>
-                    18 Dec 2016     Vestibulum viverra<br><br>
-                    7 Jan 2017      Vestibulum viverra
-                </p>
-            </div>
-        </div>
+        
     </section>
     <footer>
         
