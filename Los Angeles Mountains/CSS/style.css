@@ -91,6 +91,37 @@ nav {
     float:left;
 }
 
+/* Mid Section */
+.mid-section {
+    position: relative;
+    width: 100%; /* Maximum width */
+  }
+  
+  .mid-section .history {
+    position: absolute;
+    bottom: 50%;
+    right: 2%;
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .history h4 {
+    color: #414f6b;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: 3vw;
+  }
+  .number {
+    color: #414f6b81;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: 10vw;
+    position: absolute;
+    bottom: 35%;
+    right: 78%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+
 /* Last Section */
 .last-section {
     position: relative;
