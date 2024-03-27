@@ -247,7 +247,6 @@ nav {
 
 .climb {
     color: #4d4d4d;
-    background-color: lightgray; 
     /* the empty space between this section and the above picture
     stems from this section. I do not know why.  */
 }
@@ -259,7 +258,7 @@ nav {
   .number2 {
     color: #414f6b81;
     font-family: "novecento-sans-condensed", sans-serif;
-    font-size: 10vw;
+    font-size: 5vw;
     position: absolute;
     padding-left: 10%;
     padding-right: 10%;
@@ -267,6 +266,43 @@ nav {
   
 
 /* Last Section */
+/* Tabs for Mountain 1 and Mountain 2 */
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 30%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: #4d4d4d;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: #414f6b;}
+  #News {background-color: #414f6b;}
+
 .last-section {
     position: relative;
     width: 100%; /* Maximum width */
