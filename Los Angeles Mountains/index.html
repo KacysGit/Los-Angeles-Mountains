@@ -49,15 +49,17 @@
         <!-- HISTORY -->
         <img id="startPic" src="img/slide1.png"  alt="Image of Mountain">
         <!-- The grid: four columns -->
-        <div class="row">
-            <div class="column">
-            <img src="img/slide1.png" alt="First Mountain" onclick="gallery(this);">
+        <div class="imageOverlay">
+            <div class="row">
+                <div class="column">
+                <img src="img/slide1.png" alt="First Mountain" onclick="gallery(this);">
+                </div>
+                <div class="column">
+                <img src="img/slide2.png" alt="Second Mountain" onclick="gallery(this);">
+                </div>
+                <div class="column">
+                <img src="img/slide3.png" alt="Man on Mountain" onclick="gallery(this);">
             </div>
-            <div class="column">
-            <img src="img/slide2.png" alt="Second Mountain" onclick="gallery(this);">
-            </div>
-            <div class="column">
-            <img src="img/slide3.png" alt="Man on Mountain" onclick="gallery(this);">
         </div>
         <!-- The expanding image container -->
         <div class="img-container">
@@ -80,8 +82,7 @@
                 // Show the container element (hidden with CSS)
                 expandImg.parentElement.style.display = "block";
               }
-        </script>
-        <script>
+            // Below code is from a slideshow function I made for a personal project
             var imageList = ['img/slide2.png', 'img/slide3.png', 'img/slide1.png'];
 
             // Set the starting index to the index of the currently displayed image
@@ -103,10 +104,6 @@
         </div>
         <div class="number">
             <h4> 01. </h4>
-        </div>
-        <!-- Add image clicker overlay -->
-        <div class="imageOverlay">
-            <p>Add images here</p>
         </div>
     </section>
     <section >

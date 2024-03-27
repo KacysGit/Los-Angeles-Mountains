@@ -143,18 +143,32 @@ nav {
 
 /* The grid: Four equal columns that floats next to each other */
 .column {
-    float: left;
-    width: 10%;
-    padding: 10px;
+    flex: 1;
+    max-width: 15%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
 }
   
 /* Style the images inside the grid */
 .column img {
+    max-width: 100%;
+    height: auto;
     cursor: pointer;
+    opacity: 0.8;
 }
   
 .column img:hover {
     opacity: 1;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
   
 /* Clear floats after the columns */
@@ -164,11 +178,7 @@ nav {
     clear: both;
 }
   
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.img-container {
-    position: absolute;
-    display: none;
-}
+
   
 /* description section */
 
