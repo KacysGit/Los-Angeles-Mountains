@@ -50,6 +50,39 @@
         <button onclick="slideShow()">Next Picture</button> <br>
         <br><br><br><br><br><br><br><br><br>
         <img id="startPic" src="img/slide1.png"  alt="Image of Mountain">
+        <!-- The grid: four columns -->
+        <div class="row">
+            <div class="column">
+            <img src="img/slide1.png" alt="First Mountain" onclick="gallery(this);">
+            </div>
+            <div class="column">
+            <img src="img/slide2.png" alt="Second Mountain" onclick="gallery(this);">
+            </div>
+            <div class="column">
+            <img src="img/slide3.png" alt="Man on Mountain" onclick="gallery(this);">
+        </div>
+        <!-- The expanding image container -->
+        <div class="img-container">
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+        
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+        <script>               
+            function gallery(imgs) {
+                // Get the expanded image
+                var expandImg = document.getElementById("expandedImg");
+                // Get the image text
+                var imgText = document.getElementById("imgtext");
+                // Use the same src in the expanded image as the image being clicked on from the grid
+                startPic.src = imgs.src;
+                // Use the value of the alt attribute of the clickable image as text inside the expanded image
+                imgText.innerHTML = imgs.alt;
+                // Show the container element (hidden with CSS)
+                expandImg.parentElement.style.display = "block";
+              }
+        </script>
         <script>
             var imageList = ['img/slide2.png', 'img/slide3.png', 'img/slide1.png'];
 
