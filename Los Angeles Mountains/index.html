@@ -47,7 +47,22 @@
     </section>
     <section class="mid-section" id="mid">
         <!-- HISTORY -->
-        <img src="img/background2.png" alt="Second Mountain" style="width:100%">
+        <button onclick="slideShow()">Next Picture</button> <br>
+        <br><br><br><br><br><br><br><br><br>
+        <img id="startPic" src="img/slide1.png"  alt="Image of Mountain">
+        <script>
+            var imageList = ['img/slide2.png', 'img/slide3.png', 'img/slide1.png'];
+
+            // Set the starting index to the index of the currently displayed image
+            var index = imageList.indexOf('img/slide1.png');
+
+            function slideShow() {
+                index = (index + 1) % imageList.length;  // This ensures we cycle through the images without going out of bounds
+                var image1 = document.getElementById("startPic");
+                image1.src = imageList[index];
+            }
+        </script>
+   
         <div class="history">
             <h4>HISTORY</h4>
             <p>
