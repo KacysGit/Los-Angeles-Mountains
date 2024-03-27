@@ -93,6 +93,7 @@ nav {
 
 /* Mid Section */
 .mid-section {
+    margin: 0; padding: 0;
     position: relative;
     width: 100%; /* Maximum width */
   }
@@ -117,6 +118,37 @@ nav {
     position: absolute;
     bottom: 35%;
     right: 78%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  /* Image overlay */
+  .mid-section .imageOverlay {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+.climb {
+    color: #4d4d4d;
+    background-color: lightgray; 
+    /* the empty space between this section and the above picture
+    stems from this section. I do not know why.  */
+}
+.climb h4 {
+    color: #414f6b;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: 3vw;
+  }
+  .number2 {
+    color: #414f6b81;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: 10vw;
+    position: absolute;
     padding-left: 10%;
     padding-right: 10%;
   }
