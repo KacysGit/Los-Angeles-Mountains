@@ -115,11 +115,40 @@ nav {
     float:left;
 }
 
+.links {
+    color: #414f6b;
+    margin-right: 2%;
+}
+#second-links {
+    text-align: right;
+    vertical-align: center;
+    font-weight: 700;
+}
+
+#second-links a:first-child {
+    margin-right: 2%;
+}
+
+.logo-with-title {
+    padding-top: 1%;
+    color: #414f6b;
+    font-family: "novecento-sans-condensed", sans-serif;
+}
+.logo-with-title img {
+    float: left;
+    size: 10%;
+    width: 3%;
+}
+.logo-with-title #la {
+    color: #4d4d4d;
+    margin-bottom: 0%;
+}
+
 /* Mid Section */
 .mid-section {
     margin: 0; padding: 0;
     position: relative;
-    width: 100%; /* Maximum width */
+    width: 100%; 
   }
   
 .mid-section .history {
