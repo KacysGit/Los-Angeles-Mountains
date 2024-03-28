@@ -241,6 +241,8 @@ nav {
 .carousel-indicators li {
     background-color: grey !important; /* I used the important tag because I had trouble overriding the color without it*/
     border: grey !important;
+    position: relative;
+    top: 3vh !important;
 }
 .carousel-indicators .active {
     background-color: #fff !important;
@@ -250,6 +252,14 @@ nav {
     width: 100%;
     display: block;
     height: auto;
+}
+/* Styling for the carousel control arrows to only display when hovering the cursor over them */
+.carousel-control { /*controls the arrows on the carousel */
+    opacity: 0 !important;
+    transition: opacity 0.5s ease;
+}
+.carousel:hover .carousel-control {
+    opacity: 1 !important;
 }
     
 
