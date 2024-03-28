@@ -160,14 +160,17 @@ nav {
 .logo-with-title #la {
     position: absolute;
     left: 4.5%;
-    bottom: 180%;
+    bottom: 150%;
     color: #4d4d4d;
     margin-bottom: 1%;
+    font-size: 3vh;
 }
 .logo-with-title #mountain {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     left: 4.5%;
+    font-size: 3vh;
+    letter-spacing: .05vw;
 }
 
 /* Mid Section */
@@ -188,7 +191,7 @@ nav {
 .history {
     position: relative;
 }
-.history-description h4 {
+.LA-history h4 {
     position: absolute;
     top: 28%;
     right: 63%;
@@ -197,7 +200,7 @@ nav {
     font-size: calc(5vw + 1px); 
     z-index: 1; /* keeps it at the front of the screen */
 }
-.history-description p {
+.LA-history p {
     position: absolute;
     top: 42%;
     left: 20%;
@@ -327,7 +330,7 @@ nav {
     /* z-index: 2; https://www.youtube.com/watch?v=oRbLowjKVzI&t=195s&ab_channel=DaniKrossing */
 }
 
-/* Tabs for Mountain 1 and Mountain 2 */
+/* Last Section. Includes Tabs for Mountain 1 and Mountain 2 */
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
     height: 30%;
@@ -360,7 +363,7 @@ body, html {
     height: 100%;
   }
   
-  #Home {background-color: #414f6b;}
+  #LA-Mountain {background-color: #414f6b;}
   #News {background-color: #414f6b;}
 
 .last-section {
