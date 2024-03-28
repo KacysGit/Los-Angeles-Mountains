@@ -164,21 +164,25 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
 }
-.history h4 {
+.history {
+    position: relative;
+}
+.history-description h4 {
+    position: absolute;
+    top: 28%;
+    right: 63%;
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
     font-size: calc(5vw + 1px); 
-    position: absolute;
-    left: 24%;
-    bottom: 120%;
-    z-index: 3;
+    z-index: 1; /* keeps it at the front of the screen */
 }
-.history p {
-    font-size: calc(1vw + 1px); 
-    z-index: 2;
-    margin-right: 15%;
-    position: relative;
-    left: 13%;
+.history-description p {
+    position: absolute;
+    top: 42%;
+    left: 20%;
+    margin-right: 10%;
+    font-size: calc(1vw);
+    z-index: 1;
 }
 /* The number that is tied with History */
 .number h4 {
