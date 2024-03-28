@@ -325,19 +325,89 @@ body, html {
   
   /* Footer */
   .footer {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #414f6b;
-  font-family: "novecento-sans-condense", sans-serif;
-  font-style: bold;
-  font-size: 3vw;
-  color: #63769D;
-  text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #414f6b;
+    font-family: "novecento-sans-condense", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #63769D;
+    height: 100px;
+  }
+
+.footer .column2,
+.footer .column3 {
+  /* flex: 1; Not needed unless you want the columns to take up equal space */
+  display: flex;
+  align-items: center;
 }
+
+.footer .column2 {
+    justify-content: flex-start; /* Aligns content to the left */
+  }
+
+  .footer .column3 {
+    justify-content: flex-end; /* Aligns content to the right */
+    text-align: right; /* Aligns text to the right */
+  }
 
 .footer img{
     opacity: 0.3;
     float: left;
 }
+
+.footer img.logo {
+    width: 50px;
+    height: auto;
+}
+
+#footerLogo {
+    background-color: #414f6b;
+    opacity: 0.3;
+}
+
+#copyright {
+    font-weight: 500;
+}
+
+#copyright-logo {
+    float: left;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column2 {
+    flex: 1;
+    max-width: 15%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 1%;
+}
+.column3{
+    flex: 1;
+    max-width: 35%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 1%;
+}
+  
+/* Style the images inside the grid */
+.column2 img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+  
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+  
