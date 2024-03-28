@@ -167,17 +167,18 @@ nav {
 .history h4 {
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
-    font-size: calc(5vw + 1px); ;
+    font-size: calc(5vw + 1px); 
 }
 .history p {
     font-size: calc(1vw + 1px); 
 }
-.number {
+/* The number that is tied with History */
+.number h4 {
     color: #414f6b81;
     font-family: "novecento-sans-condensed", sans-serif;
-    font-size: 10vw;
+    font-size: calc(11vw + 1px);
     position: absolute;
-    bottom: 35%;
+    bottom: 55.35%;
     right: 78%;
     padding-left: 10%;
     padding-right: 10%;
