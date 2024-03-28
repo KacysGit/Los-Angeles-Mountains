@@ -137,6 +137,7 @@ nav {
     padding-top: 1%;
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
+    font-size: calc(1vw + 1px);
 }
 .logo-with-title img {
     float: left;
@@ -254,8 +255,7 @@ nav {
 
 .climb {
     color: #4d4d4d;
-    /* the empty space between this section and the above picture
-    stems from this section. I do not know why.  */
+    font-size: calc(1vw + 3px);
 }
 .climb h4 {
     color: #414f6b;
