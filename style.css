@@ -82,6 +82,10 @@ nav {
     font-size: calc(4vw + 1%); 
     text-align: right;
 }
+.initialLogo img {
+    size: 10%;
+    width: 6%;
+}
 .overlay3 {
     position: absolute;
     bottom: calc(85% + 3vw); /* the vw amount adjusts height */
