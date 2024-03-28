@@ -370,6 +370,8 @@ body, html {
 #footerLogo {
     background-color: #414f6b;
     opacity: 0.3;
+    size: 10%;
+    width: 35%;
 }
 
 #copyright {
