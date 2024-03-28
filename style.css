@@ -341,26 +341,6 @@ body, html {
     height: 100px;
   }
 
-.footer .column2,
-.footer .column3 {
-  /* flex: 1; Not needed unless you want the columns to take up equal space */
-  display: flex;
-  align-items: center;
-}
-
-.footer .column2 {
-    justify-content: flex-start; /* Aligns content to the left */
-  }
-
-  .footer .column3 {
-    justify-content: flex-end; /* Aligns content to the right */
-    text-align: right; /* Aligns text to the right */
-  }
-
-.footer img{
-    opacity: 0.3;
-    float: left;
-}
 
 .footer img.logo {
     width: 50px;
@@ -372,14 +352,6 @@ body, html {
     opacity: 0.3;
     size: 10%;
     width: 35%;
-}
-
-#copyright {
-    font-weight: 500;
-}
-
-#copyright-logo {
-    float: left;
 }
 
 /* The grid: Four equal columns that floats next to each other */
@@ -402,18 +374,5 @@ body, html {
     padding: 1%;
 }
   
-/* Style the images inside the grid */
-.column2 img {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-  
-.row2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
 
   
