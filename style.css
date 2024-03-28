@@ -123,30 +123,51 @@ nav {
     color: #414f6b;
     margin-right: 2%;
 }
-#second-links {
-    text-align: right;
-    vertical-align: center;
-    font-weight: 700;
-}
 
-#second-links a:first-child {
-    margin-right: 2%;
+/* Create space for the contents of the middle nav bar */
+.middle-nav-bar {
+    margin-top: 4%;
+    justify-content: space-around;
 }
+.second-links {
+    position: absolute;
+    left: 60%;
+    bottom: 200%;
+    text-align: right;
+    font-weight: 700;
+    z-index: 1;
+}
+/* .second-links a:first-child {
+    margin-right: 2%;
+} */
 
 .logo-with-title {
+    position: relative;
     padding-top: 1%;
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
     font-size: calc(1vw + 1px);
+    margin-left: 20%;
+    z-index: 1;
 }
 .logo-with-title img {
+    position: absolute;
+    bottom: 100%;
     float: left;
     size: 10%;
-    width: 3%;
+    width: 4%;
 }
 .logo-with-title #la {
+    position: absolute;
+    left: 4.5%;
+    bottom: 180%;
     color: #4d4d4d;
-    margin-bottom: 0%;
+    margin-bottom: 1%;
+}
+.logo-with-title #mountain {
+    position: absolute;
+    bottom: 40%;
+    left: 4.5%;
 }
 
 /* Mid Section */
