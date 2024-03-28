@@ -251,31 +251,39 @@ nav {
     display: block;
     height: auto;
 }
-  
-/* description section */
-
-.climb {
-    color: #4d4d4d;
-    font-size: calc(1vw + 3px);
-}
-.climb h4 {
-    color: #414f6b;
-    font-family: "novecento-sans-condensed", sans-serif;
-    font-size: 3vw;
-  }
-  .number2 {
-    color: #414f6b81;
-    font-family: "novecento-sans-condensed", sans-serif;
-    font-size: 5vw;
-    position: absolute;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
+    
 
 /* Last Section */
-/* Tabs for Mountain 1 and Mountain 2 */
+/* Climb Section */
+.climb {
+    position: relative;
+}
+.climb h4 {
+    position: absolute;
+    top: 20%;
+    left: 23.5%;
+    color: #414f6b;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: calc(5vw + 1px); 
+    z-index: 1; /* keeps it at the front of the screen */
+}
+.climb p {
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    margin-right: 2%;
+    font-size: calc(1vw);
+}
+.number2 h4 {
+    color: #414f6b81;
+    font-family: "novecento-sans-condensed", sans-serif;
+    font-size: calc(11vw + 1px);
+    position: relative; /* uses left/right/top/bottom to move it's position relative to where it started */
+    left: 15%; /* push it from the left */
+    /* z-index: 2; https://www.youtube.com/watch?v=oRbLowjKVzI&t=195s&ab_channel=DaniKrossing */
+}
 
+/* Tabs for Mountain 1 and Mountain 2 */
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
     height: 30%;
