@@ -359,10 +359,10 @@ body, html {
   .content h4 {
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
-    font-size: calc(3vw + 1px); ;
+    font-size: calc(3vw + 1px); 
   }
   .content p {
-    font-size: calc(1vw + 1px); ;
+    font-size: calc(1vw + 1px); 
   }
   
   /* Footer */
@@ -376,12 +376,12 @@ body, html {
     font-weight: 700;
     font-size: 1vw;
     color: #63769D;
-    height: 100px;
+    height: 15vh;
   }
 
 
 .footer img.logo {
-    width: 50px;
+    width: 10%;
     height: auto;
 }
 
@@ -389,22 +389,27 @@ body, html {
     background-color: #414f6b;
     opacity: 0.3;
     size: 10%;
-    width: 35%;
+    width: 15%;
 }
 
 /* The grid: Four equal columns that floats next to each other */
 .column2 {
     flex: 1;
-    max-width: 15%;
+    max-width: 30%;
     box-sizing: border-box;
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: left;
     padding: 1%;
+    font-size: calc(1vw + 2px);
+}
+.column2 p {
+    margin-left: 2%;
+    font-stretch: extra-condensed;
 }
 .column3{
     flex: 1;
-    max-width: 35%;
+    max-width: 25%;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
