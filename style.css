@@ -9,13 +9,13 @@
 #croppedSky{
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 1vh;
 }
 
 #croppedMountain {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 1vh;
 }
 
 .centered {
