@@ -32,6 +32,7 @@
 }
 
 /* The overlay effect - lays on top of the container and over the image */
+/* LOSANGELES */
 .overlay {
     position: absolute;
     bottom: calc(5% + 25vw); /* the vw amount adjusts height */
@@ -45,7 +46,7 @@
     font-weight: 700;
     text-align: right;
 }
-
+/* MOUNTAIN */
 .overlay2 {
     position: absolute;
     bottom: calc(5% + 20vw); /* the vw amount adjusts height */
@@ -102,22 +103,36 @@
 }
 .navigation img{
     float:left;
+    
 }
 
 #la {
     color: #4d4d4d;
-    font-size: 3vh;
+    font-size: calc(1vw + 5px);
     font-weight: 700;
     vertical-align: middle;
+    position: sticky;
+    top: 30%;
+    margin-left: 20%;
 }
 #mountain {
     color: #414f6b;
-    font-size: 3vh;
+    font-size: calc(1vw + 5px);
     font-weight: 700;
     position: sticky;
-    top: 60%;
+    top: 52%;
     left: 8%;
+    letter-spacing: calc(.15vw);
+    margin-left: 20%;
 }
+#navbar img {
+    float: left;
+    padding: 1%;
+    width: calc(6vw + 5px);
+    position: sticky;
+    top: 15%;
+    margin-left: 20%;
+  }
 .logo-with-title #la {
     position: absolute;
     left: 4.5%;
@@ -135,10 +150,14 @@
 #navbar {
     overflow: hidden;
     background-color: white;
-    z-index: 10;
+    z-index: 100;
 }
 #sticky-links {
     color: #101016;
+    margin-right: 20%;
+    position: sticky;
+    bottom: 50%;
+    font-size: calc(1vw + 1px);
 }
   
   /* Navbar links */
@@ -146,13 +165,7 @@
     float: right;
     color: black;
     padding: 1%;
-    vertical-align: middle;
     position: sticky;
-    
-  }
-  #navbar img {
-    float: left;
-    padding: 1%;
   }
   
   /* Page content */
@@ -318,6 +331,7 @@
     border: grey !important;
     position: relative;
     top: 3vh !important;
+    z-index: 1;
 }
 .carousel-indicators .active {
     background-color: #fff !important;
