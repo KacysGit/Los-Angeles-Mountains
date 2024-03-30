@@ -42,7 +42,38 @@
             
         </div>
     </section>
-    <section class="middle-nav-bar">
+    <section>
+        <div id="navbar">
+            <img src="img/Logo.png" alt="Logo for LA Mountains">
+            <p id="la"> LOSANGELES </p>
+            <p id="mountain"> MOUNTAINS</p>
+            <div id="sticky-links">
+                <a href="#history"><u><i>0.1 History</i></u></a> <!-- how to link to page sections https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html -->
+                <a href="#team"><u><i>0.2 Team</i></u></a><br />
+            </div>
+            
+        </div>
+         <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the navbar
+            var navbar = document.getElementById("navbar");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+          </script>
+    </section>
+    <!-- <section class="middle-nav-bar">
         <div class="logo-with-title">
             <div class="secondLogo">
                 <img src="img/Logo.png" alt="Los Angeles Mountains Logo">
@@ -52,11 +83,11 @@
             <p id="mountain"> MOUNTAINS</p>
                        
             <div class="second-links">
-                <a href="#history"><u><i>0.1 History</i></u></a> <!-- how to link to page sections https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html -->
+                <a href="#history"><u><i>0.1 History</i></u></a> <!-- how to link to page sections https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html 
                 <a href="#team"><u><i>0.2 Team</i></u></a><br />
             </div>  
         </div> 
-    </section>
+    </section> -->
     <section class="mid-section" id="history">
         <!-- HISTORY -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -65,7 +96,7 @@
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+            </ol>   
           
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
@@ -153,11 +184,11 @@
 
                     <img src="img/background4.png" alt="Mountain with birds" style="width:100%";>
                     <div class="content">
-                        <h4>Rut Row!</h4>
-                        <p> The programmer could not see this tab <br>
-                            when analyzing the PSD file in GIMP <br> 
-                            and Illustrator so the programmer was <br>
-                            not able to recreate this tab! <br>
+                        <h4>Schedule</h4>
+                        <p> 17 Nov 2016     Vestibulum viverra <br><br>
+                            13 Nov 2016     Vestibulum viverra <br> 
+                            28 Dec 2016     Vestibulum viverra<br><br>
+                            9 Jan 2017      Vestibulum viverra
                         </p>
                     </div>
                 </div>
@@ -196,6 +227,7 @@
         <div class="footer">
             <div class="column2">
                 <img src="img/Logo.png" alt="Los Angeles Mountains Logo" id="footerLogo">
+                <!-- <img src="img/logo cover.png" id="cover-Logo"> -->
                 <p>LOSANGELES <br>MOUNTAINS</p>
             </div>
             <div class="column3">

@@ -104,14 +104,77 @@
     float:left;
 }
 
+#la {
+    color: #4d4d4d;
+    font-size: 3vh;
+    font-weight: 700;
+    vertical-align: middle;
+}
+#mountain {
+    color: #414f6b;
+    font-size: 3vh;
+    font-weight: 700;
+    position: sticky;
+    top: 60%;
+    left: 8%;
+}
+.logo-with-title #la {
+    position: absolute;
+    left: 4.5%;
+    bottom: 150%;
+    color: #4d4d4d;
+    margin-bottom: 1%;
+    font-size: 3vh;
+}
+
 .links {
     color: #414f6b;
     margin-right: 2%;
 }
+/* Nav bar from w3 schools */
+#navbar {
+    overflow: hidden;
+    background-color: white;
+    z-index: 10;
+}
+#sticky-links {
+    color: #101016;
+}
+  
+  /* Navbar links */
+  #navbar a {
+    float: right;
+    color: black;
+    padding: 1%;
+    vertical-align: middle;
+    position: sticky;
+    
+  }
+  #navbar img {
+    float: left;
+    padding: 1%;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 6px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 30px;
+  }
 
 /* Create space for the contents of the middle nav bar */
 .middle-nav-bar {
-    margin-top: 4%;
+    margin-top: 2%;
     justify-content: space-around;
 }
 .second-links {
@@ -139,14 +202,7 @@
     size: 10%;
     width: 4%;
 }
-.logo-with-title #la {
-    position: absolute;
-    left: 4.5%;
-    bottom: 150%;
-    color: #4d4d4d;
-    margin-bottom: 1%;
-    font-size: 3vh;
-}
+
 .logo-with-title #mountain {
     position: absolute;
     bottom: 30%;
@@ -385,7 +441,6 @@ body, html {
     height: 15vh;
 }
 
-
 .footer img.logo {
     width: 10%;
     height: auto;
@@ -396,6 +451,11 @@ body, html {
     opacity: 0.3;
     size: 10%;
     width: 15%;
+}
+#cover-logo {
+    position: relative;
+    opacity: .8;
+    right: 100px;
 }
 
 /* The grid: Three equal columns that floats next to each other */
