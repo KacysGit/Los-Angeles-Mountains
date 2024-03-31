@@ -384,6 +384,13 @@
 }
 
 /* Last Section. Includes Tabs for Mountain 1 and Mountain 2 */
+/* Display Tabs for desktops and acordian for phones */
+.mobile-display{display:none}
+.desktop-display{display:block}
+@media (max-width:800px){
+.desktop-display {display:none}
+.mobile-display {display:block}
+}
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
     height: 30%;
