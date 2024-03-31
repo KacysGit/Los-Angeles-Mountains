@@ -470,8 +470,7 @@ body, html {
     font-weight: 700;
     font-size: calc(1vw);
     color: #63769D;
-    height: calc(10vh);
-    padding: 3%;
+    height: calc(12vh);
 }
 
 .footer img.logo {
