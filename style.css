@@ -146,7 +146,8 @@
     color: #414f6b;
     margin-right: 2%;
 }
-/* Nav bar from w3 schools */
+
+/* Sticky Nav bar from w3 schools */
 #navbar {
     overflow: hidden;
     background-color: white;
@@ -163,7 +164,7 @@
   /* Navbar links */
   #navbar a {
     float: right;
-    color: black;
+    color: #414f6b;
     padding: 1%;
     position: sticky;
   }
