@@ -244,7 +244,7 @@
 }
 .LA-history h4 {
     position: absolute;
-    top: 28%;
+    top: 8.5%;
     right: 63%;
     color: #414f6b;
     font-family: "novecento-sans-condensed", sans-serif;
@@ -253,7 +253,7 @@
 }
 .LA-history p {
     position: absolute;
-    top: 42%;
+    top: 22%;
     left: 20%;
     margin-right: 10%;
     font-size: calc(1vw);
@@ -265,7 +265,7 @@
     font-family: "novecento-sans-condensed", sans-serif;
     font-size: calc(11vw + 1px);
     position: absolute;
-    bottom: 54.5%;
+    bottom: 74.5%;
     left: 5.85%;
     padding-left: 10%;
     padding-right: 10%;
