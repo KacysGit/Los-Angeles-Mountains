@@ -395,17 +395,10 @@
 #accordion {
     background-color: #414f6b !important;
     color: #B0B4BE !important;
-    /* width: 100% !important; */
 }
 #accordion:hover {
     background-color: #B0B4BE !important;
     color: black !important;
-}
-#accordion::content {
-    background-color: #B0B4BE !important;
-}
-#accordion img {
-    /* width: 100% !important; */
 }
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
