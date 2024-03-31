@@ -35,7 +35,7 @@
 /* LOSANGELES */
 .overlay {
     position: absolute;
-    bottom: calc(5% + 25vw); /* the vw amount adjusts height */
+    bottom: calc(5% + 26vw); /* the vw amount adjusts height */
     right: calc(7% + 29vw); /* Increase to push left */
     width: calc(60% + 5vw); /* https://stackoverflow.com/questions/42014594/linear-scaling-between-2-font-sizes-using-calc-and-vw */
     letter-spacing: calc(0.5vw + 1px);
@@ -49,7 +49,7 @@
 /* MOUNTAIN */
 .overlay2 {
     position: absolute;
-    bottom: calc(5% + 20vw); /* the vw amount adjusts height */
+    bottom: calc(5% + 21vw); /* the vw amount adjusts height */
     right: calc(7% + 29vw); /* Increase to push left */
     width: calc(60% + 5vw); 
     letter-spacing: calc(0.5vw + 1px);
