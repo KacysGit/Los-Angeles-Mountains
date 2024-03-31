@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.typekit.net/son1zgm.css">
     
@@ -149,12 +150,12 @@
         <!-- Tabs for Mountain 1 and Mountain 2 -->
         <body>
             <!-- If mobile App -->
-            <div class="mobile-display">
+            <div class="desktop-display">
 
                 <h2>Accordions</h2>
                 <p>An accordion is used to show (and hide) HTML content:</p>
                   
-                <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
+                <button onclick="myAccordion('Demo1')" class="w3-btn w3-block w3-black w3-left-align">Open Section 1</button>
                 <div id="Demo1" class="w3-container w3-hide">
                   <h4>Section 1</h4>
                   <p>Some text..</p>
@@ -162,7 +163,7 @@
                 
             </div>
             <script>
-            function myFunction(id) {
+            function myAccordion(id) {
                 var x = document.getElementById(id);
                 if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
